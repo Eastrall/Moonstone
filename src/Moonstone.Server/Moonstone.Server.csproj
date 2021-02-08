@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiteNetwork.Server" Version="1.0.0-rc.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Moonstone.Common\Moonstone.Common.csproj" />
+    <ProjectReference Include="..\Moonstone.Configuration.Yaml\Moonstone.Configuration.Yaml.csproj" />
+    <ProjectReference Include="..\Moonstone.Protocol\Moonstone.Protocol.csproj" />
+  </ItemGroup>
+
+</Project>
