@@ -7,23 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D3C70C6F-890
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{695AA63A-9426-4B51-8592-E88557D70577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonstone.Server", "src\Moonstone.Server\Moonstone.Server.csproj", "{C8B15F36-FD14-4767-8A48-B42BAB7D7501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonstone.Server", "src\Moonstone.Server\Moonstone.Server.csproj", "{C8B15F36-FD14-4767-8A48-B42BAB7D7501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonstone.Protocol", "src\Moonstone.Protocol\Moonstone.Protocol.csproj", "{50A880FA-57EB-4178-93C1-B5F21D495842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonstone.Protocol", "src\Moonstone.Protocol\Moonstone.Protocol.csproj", "{50A880FA-57EB-4178-93C1-B5F21D495842}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{5C8AE525-77FC-48E1-89DD-C8CD5B7AC6EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonstone.Configuration.Yaml", "src\Moonstone.Configuration.Yaml\Moonstone.Configuration.Yaml.csproj", "{0DC036B4-5523-4502-B9E5-49C38F4AD830}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonstone.Common", "src\Moonstone.Common\Moonstone.Common.csproj", "{10732FFB-708B-42C1-BB5B-D5FE648599DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonstone.Common", "src\Moonstone.Common\Moonstone.Common.csproj", "{10732FFB-708B-42C1-BB5B-D5FE648599DE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{CB1D0F4A-561D-4A14-A50D-B533D8CE1734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonstone.WdfEditor", "src\tools\Moonstone.WdfEditor\Moonstone.WdfEditor.csproj", "{C644526C-CA0F-4B57-9EFD-0E9852203B46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonstone.WdfEditor", "src\tools\Moonstone.WdfEditor\Moonstone.WdfEditor.csproj", "{C644526C-CA0F-4B57-9EFD-0E9852203B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonstone.Protocol.Tests", "test\Moonstone.Protocol.Tests\Moonstone.Protocol.Tests.csproj", "{1279644D-8A99-4A9D-AA2B-A74AE6343A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonstone.Protocol.Tests", "test\Moonstone.Protocol.Tests\Moonstone.Protocol.Tests.csproj", "{1279644D-8A99-4A9D-AA2B-A74AE6343A11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonstone.Server.Tests", "test\Moonstone.Server.Tests\Moonstone.Server.Tests.csproj", "{FD59D151-E3E9-49C9-968C-BEBC30BEE247}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonstone.Server.Tests", "test\Moonstone.Server.Tests\Moonstone.Server.Tests.csproj", "{FD59D151-E3E9-49C9-968C-BEBC30BEE247}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AF7683AF-8D36-4A5F-8F24-091ED1BA3300}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{FD59D151-E3E9-49C9-968C-BEBC30BEE247}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD59D151-E3E9-49C9-968C-BEBC30BEE247}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD59D151-E3E9-49C9-968C-BEBC30BEE247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7683AF-8D36-4A5F-8F24-091ED1BA3300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7683AF-8D36-4A5F-8F24-091ED1BA3300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7683AF-8D36-4A5F-8F24-091ED1BA3300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7683AF-8D36-4A5F-8F24-091ED1BA3300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
