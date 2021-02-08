@@ -1,0 +1,21 @@
+server:
+  ip: null
+  port: 9111
+  max-players: 100
+  name: 'Moonstone'
+
+database:
+  host: 'moonstone.mysql'
+  port: 3306
+  username: 'moonstone_usr'
+  password: 'moonstone_pwd'
+  database: 'moonstone'
+
+game:
+  welcome-message: 'Welcome to Moonstone server!'
+  rates:
+    exp: 1
+    drop: 1
+    gold: 1
+  maps:
+    - 'hopeworld'
