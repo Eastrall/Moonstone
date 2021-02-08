@@ -11,7 +11,7 @@
         /// <remarks>
         /// When null or empty, the server listen on all network interfaces.
         /// </remarks>
-        public string Ip { get; set; }
+        public string Ip { get; set; } = null!;
 
         /// <summary>
         /// Gets or sets the server's listening port.
@@ -26,6 +26,6 @@
         /// <summary>
         /// Gets or sets the server's name.
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
     }
 }

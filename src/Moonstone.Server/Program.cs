@@ -24,6 +24,7 @@ namespace Moonstone.Server
                 })
                 .ConfigureLogging(builder =>
                 {
+                    builder.AddConsole();
                     builder.AddFilter("LiteNetwork", LogLevel.Warning);
                     builder.SetMinimumLevel(LogLevel.Trace);
                 })
@@ -31,6 +32,7 @@ namespace Moonstone.Server
                 {
                     services.AddOptions();
                     services.Configure<ServerConfiguration>(context.Configuration.GetSection("server"));
+                    services.Configure<DatabaseConfiguration>(context.Configuration.GetSection("database"));
                     services.Configure<GameConfiguration>(context.Configuration.GetSection("game"));
                 })
                 .UseLiteServer<MoonstoneServer, MoonstoneUser>((hostContext, options) =>
@@ -42,7 +44,7 @@ namespace Moonstone.Server
                         throw new InvalidProgramException($"Failed to load server settings.");
                     }
 
-                    options.Host = serverConfiguration.Ip;
+                    options.Host = serverConfiguration.Ip ?? string.Empty;
                     options.Port = serverConfiguration.Port;
                     options.PacketProcessor = new FFPacketProcessor();
                     options.ReceiveStrategy = ReceiveStrategyType.Queued;

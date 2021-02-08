@@ -18,5 +18,15 @@ namespace Moonstone.Server
         {
             return base.HandleMessageAsync(incomingPacketStream);
         }
+
+        protected override void OnConnected()
+        {
+            _logger.LogInformation($"New client connected ({Id})");
+        }
+
+        protected override void OnDisconnected()
+        {
+            _logger.LogInformation($"Client {Id} disconnected");
+        }
     }
 }
